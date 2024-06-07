@@ -34,19 +34,15 @@
 ![image info](3.PNG)
 </details>
 
-# Flutter
-
 <details>
-  <summary>Cài flutter bằng fvm</summary>
+  <summary>Config máy ảo vào localhost</summary>
 
-> Cài choco  
-> Cài fvm qua choco
-> Danh sách flutter version: fvm list  
-> Sử dụng flutter version cho project hiện tại: fvm use 3.22.0  
-> Sử dụng flutter version cho global: fvm global 3.22.0
+> Setting máy ảo như trong ảnh  
+> Đổi endpoint về local host: <http://10.0.2.2>:[PORT]/
+![image info](4.PNG)
 </details>
 
-# Git
+## Git
 
 <details>
   <summary>warning: in the working copy of 'pubspec.lock', LF will be replaced by CRLF the next time Git touches it</summary>
@@ -55,21 +51,5 @@
 > Sau đó cứ commit lên  
 > Người khác lấy về sẽ thành crlf  
 > Mình bỏ local commit rồi pull lại cũng thành crlf
-
-</details>
-
-# Firebase
-
-<details>
-  <summary>Setup</summary>
-
-> Cần cài nodejs để có npm  
-> Sau đó cài Firebase CLI = npm install -g firebase-tools  
-> Sau đó là: firebase login
-> Sau đó: dart pub global activate flutterfire_cli  
-> Tạo project trên firebase  
-> Cuối cùng là config: flutterfire configure
-> Chọn cái project đã tạo là file firebase_options được tạo ra  
-> Trong này có DefaultFirebaseOption để init.
 
 </details>
