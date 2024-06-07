@@ -120,6 +120,17 @@ server {
 
 </details>
 
+<details>
+  <summary>Debug từ browser</summary>
+
+> Thêm --inspect khi chạy. nodemon --inspect  
+> Mở browser inspect tool lên xong ấn vào biểu tượng node  
+> Lúc này có thể đặt breakpoint, reload lại trang để xem giá trị từng variable  
+
+![image info](3.PNG)
+
+</details>
+
 ## Syntax
 
 <details>
