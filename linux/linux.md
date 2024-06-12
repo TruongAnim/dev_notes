@@ -7,13 +7,29 @@
 ```Start wsl with specific user: wsl --user truonganim```
 
 <details>
+  <summary>Power</summary>
+
+>shutdown:  
+>reboot:  
+
+</details>
+
+<details>
   <summary>Shortcut</summary>
 
 >ctrl+A: Đưa pointer về đầu lệnh  
 >ctrl+E: Đưa pointer về cuối lệnh  
->sudo apt install nodejs: Cài thêm package nào đó  
->sudo chỉ là để lấy quyền root  
 
+</details>
+
+<details>
+<summary>User</summary>
+
+>adduser newuser: Tạo user mới  
+>usermod -aG sudo newuser: Thêm user mới vào trong sudo group  
+>su - otheruser: Chuyển sang user khác  
+>passwd:  Đổi mật khẩu của user hiện tại  
+>exit: Đăng xuất user hiện tại. Quay về user root
 </details>
 
 <details>
@@ -22,6 +38,10 @@
 >sudo apt update: lấy thông tin các package (phần mềm)  
 >sudo apt upgrade: update các package lên bản mới  
 >sudo apt install nodejs: Cài thêm package nào đó  
+>sudo apt remove nodejs: remove package  
+>sudo apt autoremove: remove mấy cái package k còn phụ thuộc nữa  
+>apt list --installed: Lấy ra danh sách package đã installed  
+>apt-cache show nodejs | grep 'Version:': Lấy ra version của package sẽ được install nếu run apt install  
 >sudo chỉ là để lấy quyền root  
 
 </details>
@@ -46,7 +66,8 @@
 >cd -: Back ra thư mục trước đó
 >cd /: Back ra thư mục root
 >cd /home/truong: Nhảy trực tiếp vào thư mục tính từ root mà không phải tính từ thư mục hiện tại.  
->cd: Nhảy ra thư mục account đang đăng nhập.
+>cd or cd ~: Nhảy ra thư mục account đang đăng nhập.
+>Thư mục mặc định của user là /home/truong/
 
 </details>
 
@@ -118,7 +139,8 @@
 <details>
 <summary>mv</summary>
 
->mv thì giống cp nhưng thay vì copy thì là move
+>mv thì giống cp nhưng thay vì copy thì là move  
+>mv hello goodbye: Đổi tên folder  
 </details>
 
 <details>
@@ -154,12 +176,6 @@
 </details>
 
 <details>
-<summary>passwd</summary>
-
->passwd:  Đổi mật khẩu của user hiện tại  
-</details>
-
-<details>
 <summary>top</summary>
 
 >top: Lấy ra chi tiết process giống task manager  
@@ -176,4 +192,16 @@
 <summary>free</summary>
 
 >free -h: Lấy ra thông tin về ram  
+</details>
+
+## Kết nối đển server qua ssh
+
+<details>
+<summary>Kết nối</summary>
+
+>ssh root@ip: Kết nối vào linux đang chạy ở server bên ngoài.  
+>Nhập mật khẩu của root  
+>Chạy được cả từ window lẫn linux  
+>Tạo user khác rồi đăng nhập vào bằng user mới cũng được. Đổi root thành username  
+>gõ exit để thoát khỏi ssh session
 </details>
